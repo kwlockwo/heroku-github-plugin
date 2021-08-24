@@ -16,54 +16,35 @@ A Heroku CLI plugin for GitHub intergration
 <!-- usage -->
 ```sh-session
 $ npm install -g heroku-github-plugin
-$ oclif-example COMMAND
+$ heroku COMMAND
 running command...
-$ oclif-example (-v|--version|version)
+$ heroku (-v|--version|version)
 heroku-github-plugin/0.0.0 darwin-x64 node-v12.21.0
-$ oclif-example --help [COMMAND]
+$ heroku --help [COMMAND]
 USAGE
-  $ oclif-example COMMAND
+  $ heroku COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`oclif-example github:push [FILE]`](#oclif-example-githubpush-file)
-* [`oclif-example hello [FILE]`](#oclif-example-hello-file)
+* [`heroku github:push [BRANCH]`](#heroku-githubpush-branch)
 
-## `oclif-example github:push [FILE]`
+## `heroku github:push [BRANCH]`
 
-describe the command here
+Push a branch from the connected GitHub repo
 
 ```
 USAGE
-  $ oclif-example github:push [FILE]
+  $ heroku github:push [BRANCH]
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -a, --app=app  (required) app to run command against
+  -h, --help     show CLI help
+
+EXAMPLE
+  $ heroku github:push main -a my-app
 ```
 
 _See code: [src/commands/github/push.ts](https://github.com/kwlockwo/heroku-github-plugin/blob/v0.0.0/src/commands/github/push.ts)_
-
-## `oclif-example hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ oclif-example hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ oclif-example hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/kwlockwo/heroku-github-plugin/blob/v0.0.0/src/commands/hello.ts)_
 <!-- commandsstop -->
