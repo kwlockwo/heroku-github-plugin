@@ -1,7 +1,7 @@
 heroku-github-plugin
 ====================
 
-A Heroku CLI plugin for GitHub intergration
+A Heroku CLI plugin for GitHub integration
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/heroku-github-plugin.svg)](https://npmjs.org/package/heroku-github-plugin)
@@ -46,5 +46,5 @@ EXAMPLE
   $ heroku github:push main -a my-app
 ```
 
-_See code: [src/commands/github/push.ts](https://github.com/kwlockwo/heroku-github-plugin/blob/v0.0.0/src/commands/github/push.ts)_
+_See code: [src/commands/github/push.ts](https://github.com/kwlockwo/heroku-github-plugin/blob/main/src/commands/github/push.ts)_
 <!-- commandsstop -->
