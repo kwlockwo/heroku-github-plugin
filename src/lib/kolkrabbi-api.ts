@@ -5,9 +5,9 @@ const KOLKRABBI_BASE_URL = 'https://kolkrabbi.heroku.com'
 export default class {
   version: any
 
-  getToken: () => any
+  getToken: any
 
-  constructor(version: any, getToken: () => any) {
+  constructor(version: any, getToken: any) {
     this.version = version
     this.getToken = getToken
   }
