@@ -19,7 +19,7 @@ $ npm install -g heroku-github-plugin
 $ heroku COMMAND
 running command...
 $ heroku (-v|--version|version)
-heroku-github-plugin/0.0.0 darwin-x64 node-v12.21.0
+heroku-github-plugin/0.1.0 darwin-x64 node-v12.21.0
 $ heroku --help [COMMAND]
 USAGE
   $ heroku COMMAND
@@ -29,7 +29,7 @@ USAGE
 # Commands
 <!-- commands -->
 * [`heroku github:push [BRANCH]`](#heroku-githubpush-branch)
-* [`heroku github:whoami [FILE]`](#heroku-githubwhoami-file)
+* [`heroku github:whoami`](#heroku-githubwhoami)
 
 ## `heroku github:push [BRANCH]`
 
@@ -47,21 +47,22 @@ EXAMPLE
   $ heroku github:push main -a my-app
 ```
 
-_See code: [src/commands/github/push.ts](https://github.com/kwlockwo/heroku-github-plugin/blob/v0.0.0/src/commands/github/push.ts)_
+_See code: [src/commands/github/push.ts](https://github.com/kwlockwo/heroku-github-plugin/blob/v0.1.0/src/commands/github/push.ts)_
 
-## `heroku github:whoami [FILE]`
+## `heroku github:whoami`
 
-describe the command here
+Display your linked GitHub account
 
 ```
 USAGE
-  $ heroku github:whoami [FILE]
+  $ heroku github:whoami
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -h, --help  show CLI help
+
+EXAMPLE
+  $ heroku github:whoami
 ```
 
-_See code: [src/commands/github/whoami.ts](https://github.com/kwlockwo/heroku-github-plugin/blob/v0.0.0/src/commands/github/whoami.ts)_
+_See code: [src/commands/github/whoami.ts](https://github.com/kwlockwo/heroku-github-plugin/blob/v0.1.0/src/commands/github/whoami.ts)_
 <!-- commandsstop -->
