@@ -3,7 +3,6 @@ import {expect, test} from '@oclif/test'
 describe('github:push', () => {
   const herokuApiUrl = 'https://api.heroku.com'
   const kolkrabbiApiUrl = 'https://kolkrabbi.heroku.com'
-
   const buildOutputUrl = 'https://build-output.heroku.com'
 
   const build = {
@@ -46,6 +45,7 @@ describe('github:push', () => {
     .reply(200, buildOutputContent)
   })
   .command(['github:push', goodBranch, '-a', app.name])
+  .exit(0)
   .it('github push with valid branch', ctx => {
     expect(ctx.stderr).to.contain(`Pushing branch: ${goodBranch} to ${app.name}... done`)
     expect(ctx.stderr).to.contain(`${buildOutputContent}`)

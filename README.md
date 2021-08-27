@@ -29,6 +29,7 @@ USAGE
 # Commands
 <!-- commands -->
 * [`heroku github:push [BRANCH]`](#heroku-githubpush-branch)
+* [`heroku github:whoami [FILE]`](#heroku-githubwhoami-file)
 
 ## `heroku github:push [BRANCH]`
 
@@ -47,4 +48,20 @@ EXAMPLE
 ```
 
 _See code: [src/commands/github/push.ts](https://github.com/kwlockwo/heroku-github-plugin/blob/v0.0.0/src/commands/github/push.ts)_
+
+## `heroku github:whoami [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ heroku github:whoami [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/github/whoami.ts](https://github.com/kwlockwo/heroku-github-plugin/blob/v0.0.0/src/commands/github/whoami.ts)_
 <!-- commandsstop -->
