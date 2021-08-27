@@ -1,7 +1,7 @@
 {
   "name": "heroku-github-plugin",
   "description": "A Heroku CLI plugin for GitHub intergration",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Keith Lockwood @kwlockwo",
   "bugs": "https://github.com/kwlockwo/heroku-github-plugin/issues",
   "dependencies": {
